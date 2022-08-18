@@ -20,6 +20,7 @@ types-redis = "^4.3.14"
 [tool.poetry-dynamic-versioning]
 enable = true
 vcs = "git"
+bump = true
 
 
 [build-system]
