@@ -1,9 +1,10 @@
 [tool.poetry]
 name = "harmony_auth"
 version = "0.0.0"
-description = ""
+description = "Discord OAuth2 Implicit Grant Dependency for FastAPI"
 license = "MIT"
 readme = "README.md"
+repository = "https://github.com/williamhatcher/harmonyAuth"
 authors = ["William Hatcher <william@hatcher.work>"]
 
 [tool.poetry.dependencies]

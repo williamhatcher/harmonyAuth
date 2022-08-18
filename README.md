@@ -4,6 +4,8 @@ Discord OAuth2 Implicit Grant thingy for FastAPI.
 
 Tokens are cached in Redis with the user's information & guilds (if enabled)
 
+Yes. I know this is a mess. :)
+
 ## Server Usage
 
 ```python
