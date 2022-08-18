@@ -4,10 +4,7 @@ from harmony_auth import HarmonyAuth, CurrentUserData
 
 app = FastAPI()
 
-auth = HarmonyAuth(api_url="http://localhost:2673", required_scopes={'email', 'identify', 'guilds'},
-                   client_id=722141347603284001,
-                   client_secret="W7-9n6fPVrKYODvfzaiSx3LH88HPNgER",
-                   verify_client_id=True)
+auth = HarmonyAuth()
 
 
 @app.get("/")
