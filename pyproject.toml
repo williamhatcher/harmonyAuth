@@ -1,16 +1,25 @@
 [tool.poetry]
-name = "harmonyAuth"
-version = "0.1.0"
+name = "harmony_auth"
+version = "0.0.0"
 description = ""
+license = "MIT"
+readme = "README.md"
 authors = ["William Hatcher <william@hatcher.work>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
 fastapi = "^0.79.0"
 uvicorn = "^0.18.2"
+httpx = "^0.23.0"
+python-dateutil = "^2.8.2"
+redis = {version="^4.3.4", extras=["hiredis"]}
 
 [tool.poetry.dev-dependencies]
+types-redis = "^4.3.14"
+
+[tool.poetry-dynamic-versioning]
+enable = true
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
 build-backend = "poetry.core.masonry.api"

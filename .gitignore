@@ -1,3 +1,15 @@
-.env
+# Python compiled
 __pycache__/
+*.py[cod]
+
+# Mac
 **/.DS_Store
+
+# Envrionment
+.env
+
+# Distribution / packaging
+dist/
+
+# Poetry
+poetry.lock

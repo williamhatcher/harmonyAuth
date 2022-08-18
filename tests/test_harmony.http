@@ -1,11 +1,24 @@
 # Test your FastAPI endpoints
 
-GET http://127.0.0.1:8000/
+###
+
+GET https://discord.com/api/oauth2/authorize?client_id={{client_id}}&response_type=token&scope=identify%20guilds&redirect_url={{valid_redirect_url}}
+
+### Successful test: Get user data
+
+GET http://127.0.0.1:8000/secure
 Accept: application/json
+Authorization: Bearer {{access_token}}
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
 
 ###
 
-GET http://127.0.0.1:8000/hello/User
-Accept: application/json
+GET http://127.0.0.1:8000/show-token
+Authorization: Bearer {{access_token}}
 
 ###
