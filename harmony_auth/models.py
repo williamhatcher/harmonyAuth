@@ -6,7 +6,7 @@ MISSING = Optional[str]
 
 
 class DiscordUser(BaseModel):
-    id: int
+    id: str
     username: str
     discriminator: str
     avatar: MISSING
@@ -46,7 +46,7 @@ class DiscordUser(BaseModel):
 
 
 class PartialDiscordGuild(BaseModel):
-    id: int
+    id: str
     name: str
     icon: MISSING
     owner: bool
