@@ -6,7 +6,7 @@ __pycache__/
 **/.DS_Store
 
 # Envrionment
-.env
+**/*.env*
 
 # Distribution / packaging
 dist/
